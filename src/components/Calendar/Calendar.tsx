@@ -4,6 +4,7 @@ import { startOfToday, format, endOfWeek, isToday, isEqual, parse} from 'date-fn
 import { eachDayOfInterval, endOfMonth, isSameMonth} from 'date-fns/esm'
 import ArrowRight from '../Icons/ArrowRight'
 import ArrowLeft from '../Icons/ArrowLeft'
+import ru from 'date-fns/esm/locale/ru'
 
 
 
@@ -19,7 +20,7 @@ const Calendar = () => {
   return (
     <div className={styles.container}>
     <div className={styles.month__title}>
-      <button className={styles.arrow} ><ArrowLeft/></button> <p>{format(firstDayOfCurrentMonth, 'MMM yyyy')}</p> <button className={styles.arrow}> <ArrowRight/></button>
+      <button className={styles.arrow} ><ArrowLeft/></button> <p>{format(firstDayOfCurrentMonth, 'MMM yyyy',{ locale: ru })}</p> <button className={styles.arrow}> <ArrowRight/></button>
     </div>
     <div className={styles.weekday}>
       <p>Пн</p>
