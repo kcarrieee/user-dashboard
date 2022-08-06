@@ -1,8 +1,11 @@
 import React from 'react'
-
-const Button = () => {
+import styles from './Button.module.scss'
+interface IButton{
+  text: string
+}
+const Button = ({text}:IButton) => {
   return (
-    <div>Button</div>
+   <button className={styles.btn}>{text}</button>
   )
 }
 

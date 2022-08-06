@@ -1,0 +1,48 @@
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px #EBE7FF;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right:20px;
+    max-width: 475px;
+    &__text{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        margin:0;
+        
+    }
+    &__hospital{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        width: 60%;
+
+    }
+    &__doctor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                margin-left: 10px;
+            }
+
+        }
+        &__name{
+            font-weight: 500;
+            font-size: 14px;
+            margin: 0;
+        }
+        &__field{
+            font-weight: 400;
+            font-size: 14px;
+            color: #EBE7FF;
+            margin: 0;
+            margin-top: 5px;
+        }
+    }
+}

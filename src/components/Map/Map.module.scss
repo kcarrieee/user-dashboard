@@ -1,0 +1,121 @@
+.map{
+    margin-left: 20px;
+    padding-bottom: 20px;
+    h2{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-weight: 400;
+        font-size: 28px;
+        margin: 0;
+        position: relative;
+        &::after{
+           content: '';
+           position: absolute;
+           bottom: -10px;
+           left: 0;
+           height: 2px;
+           width: 100%;
+           background-color: #EBE7FF;
+        }
+    }
+    &__list{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: start;
+        width: fit-content;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        padding-right: 50px;
+        @media screen and (max-width:980px) {
+                grid-template-columns: auto;
+
+            }
+
+        li{
+            background: #FFFFFF;
+            box-shadow: 0px 0px 5px #EBE7FF;
+            border-radius: 5px;
+            flex: 1;
+            display: flex;
+            max-width: 600px;
+            max-height: 183px;
+            cursor: pointer;
+            .map__image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-width: 133px;
+            }
+        }
+        &__bullets{
+            margin-top: 20px;
+            padding: 0;
+            &__text{
+                position: relative;
+                padding-left: 15px;
+                margin: 0;
+                margin-bottom: 7px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50px;
+                    background-color:#50CAFF;
+                }
+            }
+            
+        }
+    }
+}
+.item{
+    .map__image {
+    transition: background-color  0.2s ease;
+    }
+}
+.item:hover{
+    border: 2px solid #50CAFF;
+    .map__image{
+        background-color: #50CAFF;
+        svg{
+            fill: #fff;
+        }
+    }
+    .content{
+        h3{
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: #50CAFF;
+                }
+        }
+    }
+
+}
+.cardText{
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+}
+.content{
+    padding: 36px;
+}

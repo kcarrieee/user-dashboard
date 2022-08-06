@@ -1,2 +1,33 @@
 $accent: #50CAFF;
 $white: #fff;
+.header{
+    background-color:$accent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 40px;
+    
+    &__heading{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+        color: #FFFFFF;
+    }
+    &__actions{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        &__profile{
+            border: 1px solid white;
+            border-radius: 50px;
+            display: flex;
+            align-self: center;
+            padding: 2px;
+            img{
+                border-radius: 50px;
+            }
+        }
+       
+    }
+}

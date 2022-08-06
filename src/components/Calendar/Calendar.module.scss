@@ -1,0 +1,101 @@
+.container{
+    margin-top: 48px;
+    height: 100%;
+    width: 100%;
+    max-height: 520px;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EBE7FF;
+    @media screen and (max-width: 980px) {
+            max-width: 95%;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 100px;
+    }
+
+}
+.arrow{
+    background: 0;
+    border: 0;
+    outline: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(7, 79px );
+
+}
+.weekday{
+    display: grid;
+    grid-template-columns: repeat(7, 79px);
+    justify-content: center;
+    text-align: center;
+    p{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+.month__title{
+    background-color: #7761FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    p{
+        color: #fff;
+    }
+}
+.gray{
+    color: gray;
+}
+.general{
+    background: 0;
+    border: 0;
+    outline: 0;
+    width: 79px;
+    height: 63px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    padding: 10px;
+   
+}
+.currentMonth{
+    background-color: #fff;
+}
+.currentDay{
+    color: #000;
+    border: 1.5px solid #50CAFF;
+}
+
+.popUp{
+    position: relative;
+    &::after{
+        content: '2';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        background-color: #50CAFF;
+        width: 22px;
+        border-radius: 22px;
+        bottom: 10px;
+        right: 10px;
+        height: 22px;
+    }
+}

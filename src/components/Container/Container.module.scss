@@ -1,0 +1,27 @@
+.container{
+    max-width: 505px;
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 550px;
+    @media screen and (max-width: 980px) {
+        max-width: 90%;
+        margin: 0 auto;
+        
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #EBE7FF;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #003B72;
+        border-radius: 5px;
+
+    }
+}
+
